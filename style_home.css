@@ -1,0 +1,238 @@
+html, body {
+	display: flex;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow-x: hidden;
+	font-family: 'Helvetica';
+	overflow-y: hidden;;
+	color: white
+}
+
+body::after {
+	content: "";
+	background: url('./img/1.jpg') ;
+	opacity: 90%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+a:link { color: white; text-decoration: none}	
+a:visited {color: white}
+a:hover {color: #f2d5a0}
+
+.header {
+	width: 100%;
+	height: 10%;
+	position: fixed;
+}
+
+.portfolio_txt {
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	position: absolute;
+	left: 3%;
+	top: 28%;
+}
+
+/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
+.header_content {
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	width: 30%;
+}
+
+.gallery {
+	position: absolute;
+	top: 28%;
+	left: 75%;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.3rem;
+	font-size: 25px;
+}
+
+.home {
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.3rem;
+	font-size: 25px;
+}
+
+.title {
+	font-family: 'Helvetica';
+	text-align: center;
+	font-size: 5.3rem;
+	position: fixed;
+	transform: translate(0, -50%);
+	left: 10%;
+	top: 40%;
+	overflow-y: hidden;
+	letter-spacing: 0.3rem;
+}
+
+.gallery_bot {
+	opacity: 0;
+	cursor: default;
+}
+
+.social_media {
+	position: fixed;
+	bottom: 5%;
+	right: 0.1%;
+}
+
+.sm {
+	width: 10%;
+}
+
+@media screen and (max-width: 1800px) {
+	.title {
+		font-family: 'Helvetica';
+		text-align: center;
+		font-size: 5rem;
+		position: fixed;
+		transform: translate( 0, -50%);
+		left: 10%;
+		top: 40%;
+		overflow-y: hidden;
+		letter-spacing: 0.3rem;
+	}
+	
+	.gallery {
+		position: absolute;
+		top: 28%;
+		left: 70%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+
+	.home {
+		position: absolute;
+		top: 28%;
+		left: 35%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+	
+	.gallery_bot {
+		opacity: 0;
+		cursor: default;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.title {
+		font-family: 'Helvetica';
+		text-align: center;
+		font-size: 4.5rem;
+		position: fixed;
+		transform: translate(-50%, -50%);
+		left: 40%;
+		top: 40%;
+		overflow-y: hidden;
+		letter-spacing: 0.3rem;
+	}
+	
+	.gallery {
+		position: absolute;
+		top: 28%;
+		left: 50%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+
+	.home {
+		position: absolute;
+		top: 28%;
+		left: 0%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+	
+	.gallery_bot {
+		opacity: 0;
+		cursor: default;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-family: 'Helvetica';
+		text-align: center;
+		font-size: 5rem;
+		position: fixed;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 40%;
+		overflow-y: hidden;
+		letter-spacing: 0.3rem;
+	}
+	
+	.portfolio_txt {
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		position: absolute;
+		transform: translate(-50%, 0);
+		left: 50%;
+		top: 28%;
+	}
+	
+	.gallery {
+		opacity: 0;
+		cursor: default;
+	}
+
+	.home {
+		opacity: 0;
+		cursor: default;
+	}
+
+	.gallery_bot {
+		opacity: 100;
+		font-size: 2rem;
+		overflow-y: hidden;
+	}
+	
+	.social_media {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sm {
+		width: 3rem;
+	}
+}

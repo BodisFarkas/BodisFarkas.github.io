@@ -1,0 +1,726 @@
+html, body {
+	display: flex;
+	background-color: #0f0f0f;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow-x: hidden;
+	font-family: 'Helvetica';
+	overflow-y: hidden;
+	color: white
+}
+a:link { color: white; text-decoration: none}
+a:visited {color: white}
+
+.header {
+	width: 100%;
+	height: 10%;
+	position: fixed;
+}
+
+.portfolio_txt {
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	position: absolute;
+	left: 3%;
+	top: 28%;
+}
+
+/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
+.header_content {
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	width: 30%;
+	font-style: normal;
+}
+
+.gallery {
+	position: absolute;
+	top: 28%;
+	left: 75%;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	font-size: 30px;
+}
+
+.gallery:hover {
+	color: #f2d5a0;
+}
+
+.home {
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	font-size: 30px;
+}
+
+.home:hover {
+	color: #f2d5a0;
+}
+
+.content {
+	position: fixed;
+	top: 20%;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.txt_one {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 40%;
+	left: 22%;
+	font-size: 2vw;
+	letter-spacing: 0.5rem;
+	text-shadow: 0 0 30px #212121;
+	transition: 0.3s;
+}
+
+.txt_one:hover {
+	position: absolute;
+	top: 38%;
+	left: 19%;
+	font-size: 2.5vw;
+}
+
+.txt_two {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 40%;
+	left: 15%;
+	font-size: 2vw;
+	letter-spacing: 0.5rem;
+	text-shadow: 0 0 30px black;
+	transition: 0.3s;
+}
+
+.txt_two:hover {
+	position: absolute;
+	top: 38%;
+	left: 10%;
+	font-size: 2.5vw;
+}
+
+.txt_three {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 40%;
+	left: 15%;
+	font-size: 2vw;
+	letter-spacing: 0.5rem;
+	text-shadow: 0 0 20px black;
+	transition: 0.3s;
+}
+
+.txt_three:hover {
+	position: absolute;
+	top: 38%;
+	left: 10%;
+	font-size: 2.5vw;
+}
+
+.square_one {
+	position: fixed;
+	top: 40%;
+	left: 20%;
+	width: 15%;
+	transition: transform .2s;
+	background-color: #013B62;
+	box-shadow: -10px 10px 20px black;
+}
+
+.square_one:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+	background-image: url('./img/melody/IMG_9953.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.square_two {
+	position: fixed;
+	top: 40%;
+	left: 43%;
+	width: 15%;
+	transition: transform .2s;
+	box-shadow: 0px 10px 20px black;
+}
+
+.square_two:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+	background-image: url('./img/moment/GOPR3726.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.square_three {
+	position: fixed;
+	top: 40%;
+	left: 65%;
+	background-color: green;
+	width: 15%;
+	transition: transform .2s;
+	box-shadow: 10px 10px 20px black;
+}
+
+.square_three:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+	background-image: url('./img/product/FJvqKtYXIAMFL5u.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.title {
+	text-align: center;
+	letter-spacing: 0.5rem;
+	font-family: "Helvetica";
+	font-size: 6vh;
+}
+
+.list_min {
+	opacity: 0;
+}
+
+.title_min {
+		opacity: 0;
+	}
+
+@media screen and (max-width: 1800px) {
+	.gallery {
+		position: absolute;
+		top: 28%;
+		left: 70%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+
+	.home {
+		position: absolute;
+		top: 28%;
+		left: 35%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+	
+	.txt_one {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 18%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_one:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		top: 38%;
+		left: 15%;
+	}
+
+	.txt_two {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 13%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_two:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 9%;
+	}
+	
+	.txt_three {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 13%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 20px black;
+	}
+	
+	.txt_three:hover {
+		font-size: 3.5vw;
+	}
+
+	.square_one {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 20%;
+		width: 20%;
+		background-color: #013B62;
+	}
+
+	.square_one:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/melody/IMG_9953.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+	.square_two {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 50%;
+		width: 20%;
+		background-image: url('./img/moment/GOPR3726.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.square_two:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+
+
+	.square_three {
+		transform: translate(-50%, 0);
+		position: fixed;
+		top: 40%;
+		left: 80%;
+		background-color: green;
+		width: 20%
+	}
+
+	.square_three:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/product/FJvqKtYXIAMFL5u.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.list_min {
+		opacity: 0;
+	}
+	
+	.title_min {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.gallery {
+		position: absolute;
+		top: 28%;
+		left: 70%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+
+	.home {
+		position: absolute;
+		top: 28%;
+		left: 35%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+	
+	.txt_one {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 15%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_one:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 13%;
+	}
+	
+	.txt_two {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 11%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_two:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 5%;
+	}
+	
+	.txt_three {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 10%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 20px black;
+	}
+	
+	.txt_three:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 5%;
+	}
+
+	.square_one {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 20%;
+		width: 20%;
+		background-color: #013B62;
+	}
+
+	.square_one:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/melody/IMG_9953.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+	.square_two {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 50%;
+		width: 20%;
+		background-image: url('./img/moment/GOPR3726.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.square_two:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+
+
+	.square_three {
+		transform: translate(-50%, 0);
+		position: fixed;
+		top: 40%;
+		left: 80%;
+		background-color: green;
+		width: 20%
+	}
+
+	.square_three:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/product/FJvqKtYXIAMFL5u.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.list_min {
+		opacity: 0;
+	}
+	
+	.title_min {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 1001px) {
+	.gallery {
+		position: absolute;
+		top: 28%;
+		left: 50%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+
+	.home {
+		position: absolute;
+		top: 28%;
+		left: 0%;
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		font-size: 25px;
+	}
+	
+	.title {
+		position: fixed;
+		width: 50%;
+		left: 25%;
+		text-align: center;
+	}
+	
+	.txt_one {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 20%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_one:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 18%;
+	}
+	
+	.txt_two {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 15%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 30px black;
+	}
+	
+	.txt_two:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 11%;
+	}
+	
+	.txt_three {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 40%;
+		left: 15%;
+		font-size: 3vw;
+		letter-spacing: 0.5rem;
+		text-shadow: 0 0 20px black;
+	}
+	
+	.txt_three:hover {
+		font-size: 3.5vw;
+		position: absolute;
+		left: 10%;
+	}
+
+	.square_one {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 20%;
+		width: 25%;
+		background-color: #013B62;
+	}
+
+	.square_one:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/melody/IMG_9953.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+}
+
+	.square_two {
+		position: fixed;
+		transform: translate(-50%, 0);
+		top: 40%;
+		left: 50%;
+		width: 25%;
+		background-image: url('./img/moment/GOPR3726.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.square_two:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+
+
+	.square_three {
+		transform: translate(-50%, 0);
+		position: fixed;
+		top: 40%;
+		left: 80%;
+		width: 25%
+	}
+
+	.square_three:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+		background-image: url('./img/product/FJvqKtYXIAMFL5u.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	.list_min {
+		opacity: 0;
+	}
+	
+	.title_min {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 751px) {
+	html, body {
+		display: flex;
+		background-color: #0f0f0f;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		overflow-x: visible;
+		font-family: 'Helvetica';
+		overflow-y: visible;
+		color: white
+	}
+	
+	a:hover {color: #f2d5a0}
+	
+	.portfolio_txt {
+		font-family: 'Helvetica';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.gallery {
+		opacity: 0;
+		cursor: default;
+	}
+
+	.title {
+		opacity: 0;
+	}
+	
+	.title_min {
+		opacity: 1;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		transform: translate (0%, -50%);
+		font-size: 3.5rem;
+		top: 1rem;
+		line-height: 10rem;
+		letter-spacing: 0.5rem;
+		font-weight: 100;
+	}
+
+	.home {
+		opacity: 0;
+		cursor: default;
+	}
+	
+	.square_one {
+		opacity: 0;
+	}
+	
+	.square_two {
+		opacity: 0;
+	}
+	
+	.square_three {
+		opacity: 0;
+	}
+	
+	.list_min {
+		opacity: 1;
+	}
+	
+	.table_min {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 200%;
+		letter-spacing: 0.5rem;
+		font-weight: 50;
+		font-style: normal;
+		font-family: 'Helvetica';
+		text-align: center;
+	}
+}
