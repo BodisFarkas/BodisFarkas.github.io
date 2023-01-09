@@ -9,66 +9,71 @@
 
 <body>
 <div class="header">
-	<div class="portfolio_txt">
-		<a href="index.html">Portfolio</a>
+	<div style="flex-grow: 1">
+		<a class="portf" href="index.html">Portfolio</a>
 	</div>
-	<div class="header_content">
+	<div style="flex-grow: 8"></div>
+	<div style="flex-grow: 1">
 		<a class="home" href="index.html">Home</a>
+	</div>
+	<div style="flex-grow: 1">
 		<a class="gallery" href="gallery.html">Gallery</a>
 	</div>
 </div>
-<div class="title">
-	<b>Melody</b>
-</div>
-<div class="cover">
-	<img src="./img/melody/IMG_9953.jpg" onclick="openModal();currentSlide(1)"/>
-</div>
-<div class="container">
-	<figure>
-		<img src="./img/melody/6 (1 of 2).jpg" onclick="openModal();currentSlide(2)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/6 (2 of 4).jpg" onclick="openModal();currentSlide(3)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/6 (4 of 19).jpg" onclick="openModal();currentSlide(4)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/6 (5 of 19).jpg" onclick="openModal();currentSlide(5)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/6 (7 of 19).jpg" onclick="openModal();currentSlide(6)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/6 (46 of 47).jpg" onclick="openModal();currentSlide(7)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/IMG_0018.jpg" onclick="openModal();currentSlide(8)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/IMG_4096.jpg" onclick="openModal();currentSlide(9)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/IMG_4191.jpg" onclick="openModal();currentSlide(10)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/IMG_4318.jpg" onclick="openModal();currentSlide(11)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/IMG_9933.jpg" onclick="openModal();currentSlide(12)"/>
-	</figure>	
-	<figure>
-		<img src="./img/melody/IMG_9950.jpg" onclick="openModal();currentSlide(13)"/>
-	</figure>	
-	<figure>
-		<img src="./img/melody/IMG_9979.jpg" onclick="openModal();currentSlide(14)"/>
-	</figure>	
-	<figure>
-		<img src="./img/melody/IMG_9984.jpg" onclick="openModal();currentSlide(15)"/>
-	</figure>
-	<figure>
-		<img src="./img/melody/Képernyőfotó 2022-07-27 - 12.06.03.png" onclick="openModal();currentSlide(16)"/>
-	</figure>
+<div class="flex-container">
+	<div class="title">
+		<b>Melody</b>
+	</div>
+	<div class="cover">
+		<img src="./img/melody/IMG_9953.jpg" onclick="openModal();currentSlide(1)"/>
+	</div>
+	<div class="container">
+		<figure>
+			<img src="./img/melody/6 (1 of 2).jpg" onclick="openModal();currentSlide(2)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/6 (2 of 4).jpg" onclick="openModal();currentSlide(3)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/6 (4 of 19).jpg" onclick="openModal();currentSlide(4)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/6 (5 of 19).jpg" onclick="openModal();currentSlide(5)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/6 (7 of 19).jpg" onclick="openModal();currentSlide(6)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/6 (46 of 47).jpg" onclick="openModal();currentSlide(7)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/IMG_0018.jpg" onclick="openModal();currentSlide(8)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/IMG_4096.jpg" onclick="openModal();currentSlide(9)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/IMG_4191.jpg" onclick="openModal();currentSlide(10)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/IMG_4318.jpg" onclick="openModal();currentSlide(11)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/IMG_9933.jpg" onclick="openModal();currentSlide(12)"/>
+		</figure>	
+		<figure>
+			<img src="./img/melody/IMG_9950.jpg" onclick="openModal();currentSlide(13)"/>
+		</figure>	
+		<figure>
+			<img src="./img/melody/IMG_9979.jpg" onclick="openModal();currentSlide(14)"/>
+		</figure>	
+		<figure>
+			<img src="./img/melody/IMG_9984.jpg" onclick="openModal();currentSlide(15)"/>
+		</figure>
+		<figure>
+			<img src="./img/melody/asdasd.png" onclick="openModal();currentSlide(16)"/>
+		</figure>
+	</div>
 </div>
 <div id="myModal" class="modal">
 	<span class="close cursor" onclick="closeModal()">&times;</span>
@@ -119,10 +124,8 @@
 			<img src="./img/melody/IMG_9984.jpg" style="height: 100%">
 		</div>		
 		<div class="mySlides">
-			<img src="./img/melody/Képernyőfotó 2022-07-27 - 12.06.03.png" style="height: 100%">
+			<img src="./img/melody/asdasd.png" style="height: 100%">
 		</div>		
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>	
 	</div>
 </div>
 </body>

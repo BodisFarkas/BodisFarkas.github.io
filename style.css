@@ -14,58 +14,36 @@ a:link { color: white; text-decoration: none}
 a:visited {color: white}
 
 .header {
-	width: 100%;
-	height: 10%;
 	position: fixed;
+	width: 100%;
+	display: flex;
+	align-items: stretch;
 }
 
-.portfolio_txt {
+.header > div {
+	color: white;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
+.portf {
 	font-family: 'Helvetica';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 35px;
-	position: absolute;
-	left: 3%;
-	top: 28%;
+	font-size: 2rem;
 }
 
-/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
-.header_content {
-	position: absolute;
-	top: 30%;
-	right: 5%;
-	width: 30%;
-	font-style: normal;
+.social_media {
+	position: fixed;
+	bottom: 5%;
+	right: 0.1%;
+	opacity: 0;
 }
 
-.gallery {
-	position: absolute;
-	top: 28%;
-	left: 75%;
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 300;
-	letter-spacing: 0.2rem;
-	font-size: 30px;
-}
-
-.gallery:hover {
-	color: #f2d5a0;
-}
-
-.home {
-	position: absolute;
-	top: 28%;
-	left: 50%;
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 300;
-	letter-spacing: 0.2rem;
-	font-size: 30px;
-}
-
-.home:hover {
-	color: #f2d5a0;
+.sm {
+	width: 10%;
 }
 
 .content {
@@ -209,29 +187,11 @@ a:visited {color: white}
 		opacity: 0;
 	}
 
-@media screen and (max-width: 1800px) {
-	.gallery {
-		position: absolute;
-		top: 28%;
-		left: 70%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
+.flex-container {
+	opacity: 0;
+}
 
-	.home {
-		position: absolute;
-		top: 28%;
-		left: 35%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-	
+@media screen and (max-width: 1800px) {
 	.txt_one {
 		position: fixed;
 		width: 100%;
@@ -339,6 +299,10 @@ a:visited {color: white}
 		background-position: center;
 	}
 	
+	.social_media {
+		opacity: 0;
+	}
+	
 	.list_min {
 		opacity: 0;
 	}
@@ -349,28 +313,6 @@ a:visited {color: white}
 }
 
 @media screen and (max-width: 1500px) {
-	.gallery {
-		position: absolute;
-		top: 28%;
-		left: 70%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-
-	.home {
-		position: absolute;
-		top: 28%;
-		left: 35%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-	
 	.txt_one {
 		position: fixed;
 		width: 100%;
@@ -483,34 +425,12 @@ a:visited {color: white}
 		opacity: 0;
 	}
 	
-	.title_min {
+	.social_media {
 		opacity: 0;
 	}
 }
 
 @media screen and (max-width: 1001px) {
-	.gallery {
-		position: absolute;
-		top: 28%;
-		left: 50%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-
-	.home {
-		position: absolute;
-		top: 28%;
-		left: 0%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-	
 	.title {
 		position: fixed;
 		width: 50%;
@@ -632,6 +552,10 @@ a:visited {color: white}
 	.title_min {
 		opacity: 0;
 	}
+	
+	.social_media {
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 751px) {
@@ -650,19 +574,6 @@ a:visited {color: white}
 	
 	a:hover {color: #f2d5a0}
 	
-	.portfolio_txt {
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 35px;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		left: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	
 	.gallery {
 		opacity: 0;
 		cursor: default;
@@ -672,19 +583,37 @@ a:visited {color: white}
 		opacity: 0;
 	}
 	
+	.flex-container {
+		width: 100%;
+		opacity: 1;
+		display: flex;
+		align-items: stretch;
+		flex-direction: column;
+		transform: translate(-50%, 0);
+		position: fixed;
+		left: 50%;
+		top: 20%;	
+	}
+	
+	.flex-container > a {
+		color: white;
+		text-align: center;
+		line-height: 75px;
+	}
+	
 	.title_min {
 		opacity: 1;
-		text-align: center;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		transform: translate (0%, -50%);
-		font-size: 3.5rem;
-		top: 1rem;
-		line-height: 10rem;
+		font-size: 2.5rem;
 		letter-spacing: 0.5rem;
-		font-weight: 100;
+	}
+	
+	.list_item {
+		color: white;
+		font-size: 1.5rem;
+	}
+	
+	.list_item:hover {
+		color:#f2d5a0;
 	}
 
 	.home {
@@ -708,19 +637,25 @@ a:visited {color: white}
 		opacity: 1;
 	}
 	
-	.table_min {
+	.portf {
+		font-size: 2rem;
+		position: fixed;
+		left: 50%;
+		transform: translate(-50%,0);
+		letter-spacing: 0.2rem;
+	}
+	
+	.social_media {
+		opacity: 1;
 		position: absolute;
 		transform: translate(-50%, -50%);
-		top: 50%;
 		left: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 200%;
-		letter-spacing: 0.5rem;
-		font-weight: 50;
-		font-style: normal;
-		font-family: 'Helvetica';
-		text-align: center;
+	}
+
+	.sm {
+		width: 3rem;
 	}
 }

@@ -29,75 +29,25 @@ a:visited {color: white}
 a:hover {color: #f2d5a0}
 
 .header {
-	width: 100%;
-	height: 10%;
 	position: fixed;
-}
-
-.portfolio_txt {
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 35px;
-/* 	position: absolute;
-	left: 3%;
-	top: 28%; */
-}
-
-/* 
-	Nem jo megoldas mindent position:absolute-al csinalni
-	Hasznalj gridet, vagy flexboxot
-	pl.:
-*/
-
-.header_content {
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 3rem;
-	padding: 3rem;
+	align-items: stretch;
 }
 
-.header_content .nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.header > div {
+	color: white;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
 }
-.header_content .nav a{
-	padding-inline: 1rem;
-}
 
-
-/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
-/* Ossze, mert nem tud mar hova mozogni */
-/* .header_content {
-	position: absolute;
-	top: 30%;
-	right: 5%;
-	width: 30%;
-} */
-
-.gallery {
-	/* position: absolute;
-	top: 28%;
-	left: 75%; */
+.portf {
 	font-family: 'Helvetica';
 	font-style: normal;
 	font-weight: 400;
-	letter-spacing: 0.3rem;
-	font-size: 25px;
-}
-
-.home {
-	/* position: absolute;
-	top: 28%;
-	left: 50%; */
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 0.3rem;
-	font-size: 25px;
+	font-size: 2rem;
 }
 
 .title {
@@ -140,99 +90,24 @@ a:hover {color: #f2d5a0}
 		letter-spacing: 0.3rem;
 	}
 	
-	.gallery {
-		position: absolute;
-		top: 28%;
-		left: 70%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-
-	.home {
-		position: absolute;
-		top: 28%;
-		left: 35%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-	
 	.gallery_bot {
 		opacity: 0;
 		cursor: default;
 	}
 }
 
-@media screen and (max-width: 1300px) {
-	.title {
-		font-family: 'Helvetica';
-		text-align: center;
-		font-size: 4.5rem;
-		position: fixed;
-		transform: translate(-50%, -50%);
-		left: 40%;
-		top: 40%;
-		overflow-y: hidden;
-		letter-spacing: 0.3rem;
-	}
-	
-	.gallery {
-		position: absolute;
-		top: 28%;
-		left: 50%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-
-	.home {
-		position: absolute;
-		top: 28%;
-		left: 0%;
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		letter-spacing: 0.3rem;
-		font-size: 25px;
-	}
-	
-	.gallery_bot {
-		opacity: 0;
-		cursor: default;
-	}
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 751px) {
 	.title {
 		font-family: 'Helvetica';
 		text-align: center;
 		font-size: 5rem;
 		position: fixed;
-		transform: translate(-50%, -50%);
+		transform: translate( -50%, -50%);
 		left: 50%;
-		top: 40%;
+		top: 13rem;
 		overflow-y: hidden;
 		letter-spacing: 0.3rem;
 	}
-	
-	.portfolio_txt {
-		font-family: 'Helvetica';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 35px;
-		position: absolute;
-		transform: translate(-50%, 0);
-		left: 50%;
-		top: 28%;
-	}
-	
 	.gallery {
 		opacity: 0;
 		cursor: default;
@@ -247,6 +122,17 @@ a:hover {color: #f2d5a0}
 		opacity: 100;
 		font-size: 2rem;
 		overflow-y: hidden;
+		position: fixed;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 20rem;
+	}
+	
+	.portf {
+		font-size: 3rem;
+		position: fixed;
+		left: 50%;
+		transform: translate(-50%,0);
 	}
 	
 	.social_media {
