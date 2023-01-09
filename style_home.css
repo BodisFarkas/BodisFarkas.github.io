@@ -39,23 +39,49 @@ a:hover {color: #f2d5a0}
 	font-style: normal;
 	font-weight: 400;
 	font-size: 35px;
-	position: absolute;
+/* 	position: absolute;
 	left: 3%;
-	top: 28%;
+	top: 28%; */
 }
 
-/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
+/* 
+	Nem jo megoldas mindent position:absolute-al csinalni
+	Hasznalj gridet, vagy flexboxot
+	pl.:
+*/
+
 .header_content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	padding: 3rem;
+}
+
+.header_content .nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header_content .nav a{
+	padding-inline: 1rem;
+}
+
+
+/*OSSZECSUSZIK HA KISSEBB AZ OLDAL*/
+/* Ossze, mert nem tud mar hova mozogni */
+/* .header_content {
 	position: absolute;
 	top: 30%;
 	right: 5%;
 	width: 30%;
-}
+} */
 
 .gallery {
-	position: absolute;
+	/* position: absolute;
 	top: 28%;
-	left: 75%;
+	left: 75%; */
 	font-family: 'Helvetica';
 	font-style: normal;
 	font-weight: 400;
@@ -64,9 +90,9 @@ a:hover {color: #f2d5a0}
 }
 
 .home {
-	position: absolute;
+	/* position: absolute;
 	top: 28%;
-	left: 50%;
+	left: 50%; */
 	font-family: 'Helvetica';
 	font-style: normal;
 	font-weight: 400;
