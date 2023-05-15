@@ -1,4 +1,4 @@
-html {
+body {
 	display: flex;
 	background-image: url('img/about.jpg');
 	background-size: cover;
@@ -94,8 +94,53 @@ a:hover {color: #f2d5a0}
 
 
 .social_media {
-	position: fixed;
-	z-index: 1000;
-	right: -15rem;
-	bottom:1rem;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	right: -2rem;
+	bottom: -1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sm {
+	width: 4rem;
+	height: auto;
+}
+
+
+@media (min-width: 100px) and (max-width: 1000px) {
+	.container {
+		font-family: 'Helvetica';
+		z-index: 20;
+		text-align: center;
+		position: fixed;
+		left: 0rem;
+		top: 15rem;
+		padding: 50px;
+	}
+	
+	.title {
+		position: fixed;
+		left: 50%;
+		top: 13rem;
+		transform: translate( -50%, -50%);
+		font-weight: 700;
+		font-size: 6rem;
+	}
+	
+	.social_media {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		bottom: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.sm {
+		width: 3rem;
+		height: auto;
+	}
 }
