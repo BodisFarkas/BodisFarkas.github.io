@@ -1,0 +1,118 @@
+body {
+	display: flex;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: itc-grouch;
+}
+
+.ct-text {
+	min-width: 100%;
+	font-size: 7em;
+	letter-spacing: 0.20em;
+	font-family: Arial Black;
+	text-decoration: none;
+	text-align: center;
+	bottom: 42%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;
+	z-index: 300;
+	color: white;
+	text-shadow: 0px 0px 30px #fff, 0px 0px 30px #ccc;
+}
+
+.ct {
+	text-align: center;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: fixed;
+}
+
+.gray {
+	position: fixed;
+	top: -1%;
+	left: -1%;
+	z-index: 200;
+	width: 999999%;
+	height: 99999%;
+	background-color: black;
+	opacity: 30%;
+	filter: blur(5%);
+}
+
+.btn {
+	min-width: 100%;
+	font-size: 2em;
+	letter-spacing: 0.20em;
+	font-family: Arial Black;
+	text-decoration: none;
+	text-align: center;
+	bottom: 42%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;
+	z-index: 300;
+	color: white;
+	text-shadow: 0px 0px 30px #fff, 0px 0px 30px #ccc;
+}
+
+.ul-effect {
+	display: inline-block;
+	position: relative;
+}
+
+.ul-effect::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0.08em;
+	background-color: white;
+	transition: .5s ease-out;
+}
+
+.ul-effect:hover::before{
+	width: 92%;
+	left: 3.7%;
+	right: auto;
+}
+
+@media screen and (max-width: 900px) {
+	.ct-text {
+		color: white;
+		font-size: 4em;
+		min-width: 100%;
+		letter-spacing: 0.20em;
+		font-family: Arial Black;
+		text-decoration: none;
+		text-align: center;
+		bottom: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		position: absolute;
+		z-index: 999;
+		text-shadow: 0px 0px 30px #fff, 0px 0px 30px #ccc;
+	}
+
+	.btn {
+		min-width: 100%;
+		font-size: 2em;
+		letter-spacing: 0.10em;
+		font-family: Arial Black;
+		text-decoration: none;
+		text-align: center;
+		bottom: 45%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		position: absolute;
+		z-index: 300;
+		color: white;
+		text-shadow: 0px 0px 30px #fff, 0px 0px 30px #ccc;
+	}
+}
