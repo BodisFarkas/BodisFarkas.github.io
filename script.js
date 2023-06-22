@@ -1,23 +1,26 @@
-function openModal() {
+//nezegeto kikapcsolva 
+//function openModal() {
   document.getElementById("myModal").style.display = "block";
-}
+//}
 
-function closeModal() {
+//becsukja a nezegetot
+//function closeModal() {
   document.getElementById("myModal").style.display = "none";
-}
+//}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//melyiket nyitja meg
+//var slideIndex = 1;
+//showSlides(slideIndex);
 
-function plusSlides(n) {
+//function plusSlides(n) {
   showSlides(slideIndex += n);
-}
+//}
 
-function currentSlide(n) {
+//function currentSlide(n) {
   showSlides(slideIndex = n);
-}
+//}
 
-function showSlides(n) {
+//function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -31,4 +34,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}	
+//}	

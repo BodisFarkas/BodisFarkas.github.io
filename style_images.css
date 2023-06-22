@@ -53,7 +53,7 @@ a:hover {color: #f2d5a0}
 
 img {
 	max-width: 100%;
-	display: block;
+	display: inline-block;
 }
 
 figure {
@@ -61,7 +61,7 @@ figure {
 	display: grid;
 	grid-template-rows: 1fr auto;
 	margin-bottom: 10px;
-	break-inside: avoid;
+	break-inside: none;
 }
 
 figure > img {
@@ -71,9 +71,7 @@ figure > img {
 
 .flex-container {
 	position: absolute;
-	display: flex;
 	flex-wrap: wrap;
-	text-align: left;
 	width: 75%;
 	transform: translate(-50%, 0%);
 	left: 50%;
@@ -89,7 +87,7 @@ figure > img {
 
 .cover {
 	z-index:2;
-	flex: 100%;
+	flex: 110%;
 	padding: 10px;
 }
 
@@ -97,7 +95,7 @@ figure > img {
 	column-count: 2;
 	column-gap: 10px;
 	flex: 100%;
-	padding: 10px;
+	padding: 0px;
 }
 
 .column {
@@ -164,8 +162,8 @@ img {
 		transform: translate(-50%, -50%);
 		position: absolute;
 		left: 50%;
-		top: 1em;
-		font-size: 8vh;
+		top: 0.8em;
+		font-size: 7.5vh;
 		font-style: bold;
 		font-weight: 500;
 		letter-spacing: 0.3rem;
