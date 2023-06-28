@@ -1,182 +1,188 @@
-<html>
-<head>
-	<title>Gallery - Melody</title>
-	<meta name="author" content="Bódis Farkas"/>
-	<link rel="stylesheet" href="./CSS/style_images.css">
-	<script src="script.js"></script>
-	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gallery - Melody</title>
+		<meta name="description" content="">
+  		<meta name="keywords" content="a,b">
 
-<body>
-<div class="header">
-	<div style="flex-grow: 1">
-		<a class="portf" href="index.html">Portfolio</a>
+		<meta charset="UTF-8">
+		<meta name="author" content="Bódis Farkas"/>
+		<link rel="stylesheet" href="./CSS/style_images.css">
+		<script src="script.js"></script>
+		<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+	<div class="header">
+		<div style="flex-grow: 1">
+			<a class="portf" href="index.html">Portfolio</a>
+		</div>
+		<div style="flex-grow: 8"></div>
+		<div style="flex-grow: 1">
+			<a class="home" href="index.html">Home</a>
+		</div>
+		<div style="flex-grow: 1">
+			<a class="gallery" href="about.html">About</a>
+		</div>
 	</div>
-	<div style="flex-grow: 8"></div>
-	<div style="flex-grow: 1">
-		<a class="home" href="index.html">Home</a>
+	<div class="flex-container">
+		<div class="title">
+			<b>Melody</b>
+		</div>
+		<div class="cover">
+			<img src="./img/melody/12.jpg" onclick="openModal();currentSlide(1)"/>
+		</div>
+		<!kepek>
+		<div class="container">
+			<figure>
+				<img src="./img/melody/1.jpeg" onclick="openModal();currentSlide(2)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/2.jpg" onclick="openModal();currentSlide(3)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/3.jpg" onclick="openModal();currentSlide(4)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/4.jpg" onclick="openModal();currentSlide(5)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/5.jpg" onclick="openModal();currentSlide(6)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/6.jpg" onclick="openModal();currentSlide(7)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/7.jpg" onclick="openModal();currentSlide(8)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/8.jpg" onclick="openModal();currentSlide(9)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/9.jpg" onclick="openModal();currentSlide(10)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/10.jpg" onclick="openModal();currentSlide(11)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/11.jpg" onclick="openModal();currentSlide(12)"/>
+			</figure>	
+			<figure>
+				<img src="./img/melody/28.jpeg" onclick="openModal();currentSlide(13)"/>
+			</figure>	
+			<figure>
+				<img src="./img/melody/13.jpg" onclick="openModal();currentSlide(14)"/>
+			</figure>	
+			<figure>
+				<img src="./img/melody/14.jpg" onclick="openModal();currentSlide(15)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/15.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/16.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/17.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/18.png" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/19.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/20.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/21.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/22.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/23.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/24.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/25.jpg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/26.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/27.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/29.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/30.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/31.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+			<figure>
+				<img src="./img/melody/32.jpeg" onclick="openModal();currentSlide(16)"/>
+			</figure>
+		</div>
 	</div>
-	<div style="flex-grow: 1">
-		<a class="gallery" href="about.html">About</a>
+	<!kepnezegeto letiltva>
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="mySlides">
+				<img src="./img/melody/IMG_9953.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img class="vertical" src="./img/melody/6 (1 of 2).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/6 (2 of 4).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/6 (4 of 19).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/6 (5 of 19).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/6 (7 of 19).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/6 (46 of 47).jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img class="vertical" src="./img/melody/IMG_0018.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/IMG_4096.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/IMG_4191.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/IMG_4318.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/IMG_9933.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img class="vertical" src="./img/melody/IMG_9950.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img class="vertical" src="./img/melody/IMG_9979.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/IMG_9984.jpg" style="height: 100%">
+			</div>		
+			<div class="mySlides">
+				<img src="./img/melody/asdasd.png" style="height: 100%">
+			</div>		
+		</div>
 	</div>
-</div>
-<div class="flex-container">
-	<div class="title">
-		<b>Melody</b>
-	</div>
-	<div class="cover">
-		<img src="./img/melody/12.jpg" onclick="openModal();currentSlide(1)"/>
-	</div>
-	<!kepek>
-	<div class="container">
-		<figure>
-			<img src="./img/melody/1.jpeg" onclick="openModal();currentSlide(2)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/2.jpg" onclick="openModal();currentSlide(3)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/3.jpg" onclick="openModal();currentSlide(4)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/4.jpg" onclick="openModal();currentSlide(5)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/5.jpg" onclick="openModal();currentSlide(6)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/6.jpg" onclick="openModal();currentSlide(7)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/7.jpg" onclick="openModal();currentSlide(8)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/8.jpg" onclick="openModal();currentSlide(9)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/9.jpg" onclick="openModal();currentSlide(10)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/10.jpg" onclick="openModal();currentSlide(11)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/11.jpg" onclick="openModal();currentSlide(12)"/>
-		</figure>	
-		<figure>
-			<img src="./img/melody/28.jpeg" onclick="openModal();currentSlide(13)"/>
-		</figure>	
-		<figure>
-			<img src="./img/melody/13.jpg" onclick="openModal();currentSlide(14)"/>
-		</figure>	
-		<figure>
-			<img src="./img/melody/14.jpg" onclick="openModal();currentSlide(15)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/15.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/16.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/17.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/18.png" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/19.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/20.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/21.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/22.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/23.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/24.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/25.jpg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/26.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/27.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/29.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/30.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/31.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-		<figure>
-			<img src="./img/melody/32.jpeg" onclick="openModal();currentSlide(16)"/>
-		</figure>
-	</div>
-</div>
-<!kepnezegeto letiltva>
-<div id="myModal" class="modal">
-	<span class="close cursor" onclick="closeModal()">&times;</span>
-	<div class="modal-content">
-		<div class="mySlides">
-			<img src="./img/melody/IMG_9953.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img class="vertical" src="./img/melody/6 (1 of 2).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/6 (2 of 4).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/6 (4 of 19).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/6 (5 of 19).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/6 (7 of 19).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/6 (46 of 47).jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img class="vertical" src="./img/melody/IMG_0018.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/IMG_4096.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/IMG_4191.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/IMG_4318.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/IMG_9933.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img class="vertical" src="./img/melody/IMG_9950.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img class="vertical" src="./img/melody/IMG_9979.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/IMG_9984.jpg" style="height: 100%">
-		</div>		
-		<div class="mySlides">
-			<img src="./img/melody/asdasd.png" style="height: 100%">
-		</div>		
-	</div>
-</div>
-</body>
+	</body>
 </html>

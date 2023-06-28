@@ -4,7 +4,7 @@
 
 body {
 	display: flex;
-	background-image: url('../img/4.jpg');
+	background-color: #1c1c1c;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -30,7 +30,7 @@ a:link {text-decoration:none;}
 
 .text {
 	color: white;
-	font-size: 7em;
+	font-size: 7.5rem;
 	letter-spacing: 0.10em;
 	position: relative;
 }
@@ -136,4 +136,13 @@ a:link {text-decoration:none;}
 
 .nav_list  {
 	list-style-type: none;
+}
+
+@media screen and (max-width: 751px) {
+	.text {
+		color: white;
+		font-size: 6rem;
+		letter-spacing: 0.10em;
+		position: relative;
+	}
 }
