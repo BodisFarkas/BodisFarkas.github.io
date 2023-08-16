@@ -6,5 +6,5 @@ var kepk = new Array('./img/bg/1.jpg','./img/bg/2.jpg','./img/bg/3.png','./img/b
 function choosePic() {
 	//random szám
     var random = Math.floor(Math.random() * kepk.length);
-    document.body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(" + kepk[random] + ")";
+    document.body.style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(" + kepk[random] + ")";
 }

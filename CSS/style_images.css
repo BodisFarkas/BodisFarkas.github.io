@@ -157,6 +157,7 @@ img {
 	box-sizing: border-box;
 	overflow-y: hidden;
 }
+
 @media screen and (max-width: 751px) {
 	.portf {
 		transform: translate(-50%, -50%);
