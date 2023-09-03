@@ -70,6 +70,7 @@ figure > img {
 }
 
 .flex-container {
+	justify-content: center;
 	position: absolute;
 	flex-wrap: wrap;
 	width: 75%;
@@ -87,8 +88,9 @@ figure > img {
 
 .cover {
 	z-index:2;
-	flex: 110%;
-	padding: 10px;
+	flex: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .container {

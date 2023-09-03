@@ -73,9 +73,9 @@ a:link {text-decoration:none;}
 }
 
 .popover .content {
-	display: flex;
 	align-items: center;
 	justify-content: center;
+	display: flex;
 	position: relative;
 	width: 0;
 	height: 0;
@@ -112,14 +112,12 @@ a:link {text-decoration:none;}
 
 @keyframes slideUp {
   100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .nav_list li {
 	padding: 15px 0;
-	transform: translateY(200px);
 	opacity: 0;
 	animation: 1s slideUp ease forwards .3s;
 	position: relative;
@@ -141,8 +139,32 @@ a:link {text-decoration:none;}
 @media screen and (max-width: 751px) {
 	.text {
 		color: white;
-		font-size: 6rem;
+		font-size: 4.5rem;
 		letter-spacing: 0.10em;
 		position: relative;
+	}
+
+	.nav_list a {
+		right: 5%;
+		text-align: center;
+		text-decoration: none;
+		font-size: 3em;
+		color: white;
+		height: 100%;
+		overflow: hidden;
+		font-family: itc-grouch;
+		position: relative;
+	}
+
+	.close {
+		position: fixed;
+		top :1rem;
+		right: 2rem;
+		font-size: 2.5rem;
+		color: white;
+		cursor: pointer;
+		display: flex;
+		z-index: 1;
+		animation: 1s fadeIn ease forwards .5s;
 	}
 }
