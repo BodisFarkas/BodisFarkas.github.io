@@ -1,5 +1,5 @@
 @font-face {
-    src: url("font/itc-grouch.otf") format("opentype");
+	src: url("font/itc-grouch.otf") format("opentype");
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 	font-family: itc-grouch;
 }
 
-a:link {text-decoration:none;}
+a:link {text-decoration: none;}
 
 .centering {
 	text-align: center;
@@ -87,7 +87,7 @@ a:link {text-decoration:none;}
 
 .close {
 	position: fixed;
-	top :1rem;
+	top: 1rem;
 	right: 2rem;
 	font-size: 3rem;
 	color: white;
@@ -98,22 +98,22 @@ a:link {text-decoration:none;}
 }
 
 @keyframes grow {
-  100% {
-    height: 100%;
-    width: 100%;
- }
+	100% {
+		height: 100%;
+		width: 100%;
+	}
 }
 
 @keyframes fadeIn {
-100% {
-	opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
 
 @keyframes slideUp {
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 .nav_list li {
@@ -158,7 +158,7 @@ a:link {text-decoration:none;}
 
 	.close {
 		position: fixed;
-		top :1rem;
+		top: 1rem;
 		right: 2rem;
 		font-size: 2.5rem;
 		color: white;
