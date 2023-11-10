@@ -81,7 +81,7 @@ a:hover {
 	position: fixed;
 	left: -5%;
 	top: -5%;
-	width: 999999;
+	width: 99999;
 	height: 99999;
 	background-color: black;
 	opacity: 10%;
@@ -119,7 +119,7 @@ a:hover {
 	align-items: stretch;
 	background-image: linear-gradient(180deg, rgba(200, 0, 0, 0), #1c1c1c);
 	filter: opacity(10px);
-	z-index: 50;
+	z-index: 200;
 	font-size: 1.5rem;
 	font-family: Arial;
 	padding-bottom: 10px;
