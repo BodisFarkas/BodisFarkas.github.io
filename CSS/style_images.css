@@ -37,7 +37,6 @@ a:hover {color: #f2d5a0}
 }
 
 .header > div {
-	color: white;
 	margin: 10px;
 	text-align: center;
 	line-height: 75px;
@@ -83,6 +82,24 @@ figure > img {
 	top: 25%;
 	font-size: 6.8vw;
 	letter-spacing: 0.3rem;
+	flex: 100%;
+}
+
+.title_g {
+	font-size: 5.5vw;
+	letter-spacing: 0.2rem;
+	flex: 100%;
+}
+
+.description {
+	font-size: 1.7vw;
+	letter-spacing: 0.4rem;
+	flex: 100%;
+}
+
+.place {
+	font-size: 2vw;
+	letter-spacing: 0.4rem;
 	flex: 100%;
 }
 
