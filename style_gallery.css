@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+    margin: 0rem;
+}
+
+img {
+    padding-bottom: 5%;
+}
+
+a {
+    color: #6d6d6d;
+}
+
+a:hover {
+    color: black;
+}
+
+.head {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 7.5vw;
+    font: 'Roboto Mono', monospace, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+.head-still {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 9vw;
+    font: 'Roboto Mono', monospace, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+}
+
+
+.menu {
+    position: relative;
+
+    padding-bottom: 2rem;
+}
+
+.middle {
+    transform: translate(-50%, 0%);
+    position: absolute;
+    left: 50%;
+}
+
+.left-menu {
+    padding-right: 2rem;
+}
+
+.flex-container {
+    justify-content: center;
+	position: relative;
+	flex-wrap: wrap;
+    padding-top: 1rem;
+
+	width: 97%;
+	transform: translate(-50%, 0%);
+	left: 50%;
+}
+
+.container {
+	column-count: 2;
+    column-gap: 1rem;
+
+	flex: 100%;
+	padding: 0;
+}
+
+.container > .img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container > .img-a {
+    position: relative;
+    width: 70%;
+    height: auto;
+
+    padding-left: 30%;
+}
+
+.container > .img-aa {
+    position: relative;
+    width: 50%;
+    height: auto;
+
+    padding-left: 50%;
+}
+
+.container > .img-aaa {
+    position: relative;
+    width: 90%;
+    height: auto;
+
+    padding-left: 50%;
+}
+
+.container > .img-b {
+    position: relative;
+    width: 110%;
+    height: auto;
+
+    padding-left: -10%;
+}
+
+.container > .img-d {
+    position: relative;
+    width: 50%;
+    height: auto;
+
+    padding-top: -20%;
+}
+
+.container > .img-dd {
+    position: relative;
+    width: 40%;
+    height: auto;
+
+    padding-top: -60%;
+}
+
+.invis {
+    opacity: 0;
+}
+
+.footer {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    font-size: 2vh;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 751px) {
+    .head {
+        font-size: 3rem;
+    }
+
+    .middle {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+    margin: 0rem;
+}
+
+a {
+    color: #6d6d6d;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.header {
+    z-index: 100;
+}
+
+.sign {
+    content: url("./img/index/sign.jpeg");
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    width: 13rem;
+    height: auto;
+    background-color: blue;
+    color: white;
+    z-index: 99;
+}
+
+.corner_up {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.75rem;
+    font-size: 9vw;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    padding-bottom: 1%;
+}
+
+.rg {
+    position: absolute;
+    right: 2rem;
+    top: 10.5vw;
+    padding-bottom: 1%;
+}
+
+.corner_down {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.75rem;
+    font-size: 9vw;
+    position: inherit;
+    right: 100%;
+    top: -50%;
+    z-index: 100;
+}
+
+.corner_inf {
+    color: black;
+    font-family: Roboto, !important;
+    font-style: normal; 
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.25rem;
+    font-size: 1.3vw;
+    text-align: right;
+    white-space: normal;
+}
+
+.intr {
+    color: #000;
+    text-align: right;
+    font-family: Roboto, !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 2vw;
+    letter-spacing: 0.50rem;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.img {
+    padding-top: 15rem;
+    content: url("./img/index/1.jpeg");
+    width: 60%;
+    margin-left: 10px;
+    z-index: 99;
+}
+
+.concert {
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    height: auto;
+    min-width: 100%, !important;
+    flex-flow: row wrap;
+}
+
+.content {
+    padding-bottom: 4rem;
+    padding-top: 7rem;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.concert-left {
+    height: 100%;
+    width: 70%;
+    padding-right: 2rem;
+    color: #000;
+
+    position: relative;
+}
+
+.concert-title {
+    font-family: 'Roboto Mono', monospace, !important;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6rem;
+}
+
+.descr {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif, !important;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+    text-align: right;
+
+    padding-top: 9vw;
+}
+
+.button {
+    font-family: Roboto, !important;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-stretch: semi-condensed, !important;
+    font-weight: 300;
+    line-height: 2.4375rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+
+    padding-top: 0.5vw;
+    float: right;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.img_one {
+    content: url("./img/index/2.jpeg");
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+
+.still {
+    width: 95%;
+    left: 2.5%;
+    height: auto;
+    min-width: 100%, !important;
+    text-decoration: none;
+
+    padding-left: 3rem;
+    padding-top: 5rem;
+    display: flex;
+	align-items: stretch;
+    text-decoration: none;
+}
+
+.still-right {
+    height: 100%;
+    width: 65%;
+    padding-left: 3rem;
+    color: #000;
+
+    position: relative;
+}
+
+.still-title {
+    font-family: 'Roboto Mono', monospace, !important;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6rem;
+    text-align: right;
+
+    float: right;
+}
+
+.descr_two {
+    color: #000;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+
+    padding-top: 19vw;
+}
+
+.button_two {
+    font-size: 1.3vw;
+    font-style: normal;
+    font-stretch: semi-condensed, !important;
+    font-weight: 300;
+    line-height: 2.4375rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+.button_two:hover {
+    text-decoration: underline;
+}
+
+.img_two {
+    content: url("./img/index/3.jpeg");
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.footer {
+    font-family: Roboto, !important;
+    font-style: normal;
+    font-stretch: semi-condensed, !important;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: black;
+
+    position:relative;
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+
+    padding: 30px;
+    display: flex;
+	align-items: stretch;
+    text-decoration: none;
+    border-top: 1rem;
+}
+
+.footer a {
+    color:black;
+    text-decoration: none;
+}
+
+.phone-content {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1500px) {
+    .intr {
+        top: 50rem;
+    }
+
+    .descr {
+        padding-top: 8vw;
+    }
+
+    .descr_two {
+        padding-top: 19vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .descr {
+        padding-top: 7vw;
+    }
+
+    .intr {
+        top: 45rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .descr {
+        padding-top: 4vw;
+    }
+
+    .sign {
+        width: 10rem;
+    }
+
+    .descr_two {
+        padding-top: 16vw;
+    }
+
+    .intr {
+        top: 45rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .intr {
+        top: 40rem;
+    }
+
+    .concert {
+        width: 90%;
+    } 
+    
+    .still {
+        width: 90%;
+    }
+
+    .concert-left {
+        width: 120%;
+    } 
+    
+    .still-right {
+        width: 120%;
+    }
+
+    .still-title {
+        font-size: 3rem;
+    }
+
+    .concert-title {
+        font-size: 3rem;
+    }
+
+    .descr {
+        padding-top: 3vw;
+        font-size: 1.1vw;
+    }
+
+    .descr_two {
+        padding-top: 14vw;
+        font-size: 1.1vw;
+    }
+
+    .footer {
+        width: calc(100%);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .concert-title {
+        font-size: 2.8rem;
+    }
+
+    .sign {
+        width: 9rem;
+    }
+
+    .still-title {
+        font-size: 2.8rem;
+    }
+
+    .img_one {
+        min-width: 110%;
+    }
+
+    .img_two {
+        min-width: 110%;
+    }
+
+    .still-right {
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .concert-title {
+        font-size: 2.5rem;
+    }
+
+    .still-title {
+        font-size: 2.5rem;
+    }
+
+    .descr {
+        padding-top: 1vw;
+    }
+
+    .descr_two {
+        padding-top: 1vw;
+    }
+
+    .intr {
+        top: 30rem;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .concert,
+    .still,
+    .intr,
+    .footer {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .sign {
+        width: 6rem;
+        height: auto;
+    }
+
+    .phone-content {
+        opacity: 1;
+        
+        padding-left: 1rem;
+        width: 98%;
+
+        display: flex;
+        align-items: stretch;
+    }
+
+    .img-phone {
+        content: url("./img/index/1.jpeg");
+
+        position: absolute;        
+        width: 30rem;
+        height: 50rem;
+        transform: translate(-50%, 0%);
+        left: 51%;
+
+        padding-top: 6rem;
+
+        object-fit: cover;
+        object-position: 30%;
+
+        display: block;
+    }
+
+    .intr-phone {
+        font-size: 3vw;
+        letter-spacing: 0.50rem;
+
+        position: absolute;
+        width: 100%;
+        top: 57rem;
+        float: right;
+        padding-bottom: 2rem;
+        
+        z-index: 999;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+        padding-top: 1rem;
+        width: 97%;
+
+        position: relative;
+        top: 62rem;
+    }
+
+    .container {
+        column-count: 1;
+    
+        flex: 100%;
+        padding: 0;
+    }
+
+    .concert-title {
+        font-size: 2rem;
+    }
+
+    .descr {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .button {
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .still-title {
+        position: relative;
+
+        font-size: 2rem;
+        float: inline-end;
+        border-top: 0.1rem solid black;
+
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .descr_two {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+
+        font-size: 1rem;
+    }
+
+    .button_two {
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+
+        padding-bottom: 5rem;
+    }
+
+    .footer-phone {
+        font-family: Roboto, !important;
+        font-style: normal;
+        font-stretch: semi-condensed, !important;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        color: black;
+        text-decoration: none;
+
+        position: relative;
+
+        height: auto;
+        padding: 30px;
+
+        display: flex;
+        align-items: stretch;
+    }
+
+    .cp {
+        position: relative;
+        padding-bottom: 1rem;
+        text-align: center;
+
+        color: #6d6d6d;
+        font-size: 0.8rem;
+    }
+}
