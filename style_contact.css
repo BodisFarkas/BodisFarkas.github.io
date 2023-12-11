@@ -144,4 +144,12 @@ a {
         grid-gap: 0.5rem;
         padding-bottom: 1.5rem;
     }
+
+    .title {
+        display: grid;
+        width: 75%;
+        
+        grid-gap: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
 }

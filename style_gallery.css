@@ -61,9 +61,10 @@ a:hover {
 }
 
 .middle {
-    transform: translate(-50%, 0%);
+    width: 100%;
+    background-color: yellow;
     position: absolute;
-    left: 50%;
+    text-align: center;
 }
 
 .left-menu {
