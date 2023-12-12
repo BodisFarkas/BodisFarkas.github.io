@@ -62,15 +62,16 @@ a:hover {
 
 .middle {
     width: 100%;
-    background-color: yellow;
     position: absolute;
-    text-align: center;
+    justify-content: center;
+
+    display: inline-flex;
+    font-size: 100%;
 }
 
 .left-menu {
     padding-right: 2rem;
 }
-
 .flex-container {
     justify-content: center;
 	position: relative;
