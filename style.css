@@ -334,6 +334,10 @@ a:hover {
         letter-spacing: 0.01rem;
     }
     
+    .rg {
+        right: 0rem;
+    }
+
     .corner_inf {
         font-size: 25%;
     }
