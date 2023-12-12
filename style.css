@@ -373,7 +373,7 @@ a:hover {
 
         position: absolute;
         width: 100%;
-        top: 55%;
+        top: 52%;
         float: right;
         padding-bottom: 2rem;
         
@@ -382,7 +382,7 @@ a:hover {
 
     .flex-container-phone {
         flex-wrap: wrap;
-        padding-top: 50rem;
+        padding-top: 51rem;
         width: 97%;
 
         position: relative;
