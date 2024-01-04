@@ -11,11 +11,12 @@ body {
 }
 
 a {
-    color: #6d6d6d;
+    color: black;
 }
 
 a:hover {
     color: black;
+    font-weight: bold;
 }
 
 
