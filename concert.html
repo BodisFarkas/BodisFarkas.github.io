@@ -8,6 +8,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style_gallery.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="image.js"></script>
     </head>
 
     <body>
@@ -23,26 +24,32 @@
         <div class="flex-container">
             <div class="container">
                 <img src="./img/concert/1.jpeg" class="invis img-a"></img>
-                <img src="./img/concert/2.jpeg" class="img-b"></img>
+                <img id="img" src="./img/concert/2.jpeg" data-src="./img/concert/2.jpeg" class="img-b trigger"></img>
                 <img src="./img/concert/3.jpeg" class="invis img"></img>
                 <img src="./img/concert/4.jpeg" class="invis img-aa"></img>
-                <img src="./img/concert/5.jpeg" class="img-d"></img>
+                <img id="img" id="img" src="./img/concert/5.jpeg" data-src="./img/concert/5.jpeg" class="img-d trigger"></img>
                 <img src="./img/concert/6.jpeg" class="invis img-b"></img>
                 <img src="./img/concert/7.jpeg" class="invis img-a"></img>
-                <img src="./img/concert/8.jpeg" class="img-b"></img>
+                <img id="img" src="./img/concert/8.jpeg" data-src="./img/concert/8.jpeg" class="img-b trigger"></img>
                 <img src="./img/concert/9.jpeg" class="invis img"></img>
 
-                <img src="./img/concert/1.jpeg" class="img-a"></img>
+                <img id="img" src="./img/concert/1.jpeg" data-src="./img/concert/1.jpeg" class="img-a trigger"></img>
                 <img src="./img/concert/2.jpeg" class="invis img-b"></img>
-                <img src="./img/concert/3.jpeg" class="img"></img>
-                <img src="./img/concert/4.jpeg" class="img-a"></img>
+                <img id="img" src="./img/concert/3.jpeg" data-src="./img/concert/3.jpeg" class="img trigger"></img>
+                <img id="img" src="./img/concert/4.jpeg" data-src="./img/concert/4.jpeg" class="img-a trigger"></img>
                 <img src="./img/concert/5.jpeg" class="invis img-dd"></img>
-                <img src="./img/concert/6.jpeg" class="img"></img>
-                <img src="./img/concert/7.jpeg" class="img"></img>
+                <img id="img" src="./img/concert/6.jpeg" data-src="./img/concert/6.jpeg" class="img trigger"></img>
+                <img id="img" src="./img/concert/7.jpeg" data-src="./img/concert/7.jpeg" class="img trigger"></img>
                 <img src="./img/concert/8.jpeg" class="invis img-aaa"></img>
-                <img src="./img/concert/9.jpeg" class="img"></img>
+                <img id="img" src="./img/concert/9.jpeg" data-src="./img/concert/9.jpeg" class="img trigger"></img>
             </div>
         </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightboxImg"></img>
+        </div>
+
         <div class="footer">
             ©2023 - All rights reserved | Designed and created by <span id="name">Farkas Bódis</span>
         </div>
