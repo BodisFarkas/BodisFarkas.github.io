@@ -51,7 +51,7 @@ a {
 .title {
     padding-bottom: 1rem;
     display: flex;
-	align-items: stretch;
+    align-items: stretch;
 }
 
 .msg {
@@ -96,13 +96,13 @@ a {
 
 .line_one {
     display: flex;
-	align-items: stretch;
+    align-items: stretch;
     padding-bottom: 1rem;
 }
 
 .line_two {
     display: flex;
-	align-items: stretch;
+    align-items: stretch;
     padding-bottom: 1rem;
     width: 100%;
 }
@@ -115,7 +115,8 @@ a {
     border-bottom: 0.1rem solid black;
     float: right;
 
-    padding: 0.2rem;
+    margin: 0.2rem;
+    padding: 0.1rem;
 
     font-family: 'Roboto Mono', monospace, Arial, sans-serif;
     color: black;
