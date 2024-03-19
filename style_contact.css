@@ -113,10 +113,12 @@ a {
 
 .submit {
     border-bottom: 0.1rem solid black;
+    border-left: 0.15rem solid transparent;
+    border-right: 0.15rem solid transparent;
+    border-top: 0.15rem solid transparent;
     float: right;
 
-    margin: 0.2rem;
-    padding: 0.1rem;
+    padding: 0.2rem;
 
     font-family: 'Roboto Mono', monospace, Arial, sans-serif;
     color: black;
