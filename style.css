@@ -113,7 +113,7 @@ a:hover {
     width: 100%;
     position: absolute;
 
-    bottom: 1rem;
+    bottom: 0rem;
     right: 1rem;
     z-index: 100;
 }
@@ -322,7 +322,7 @@ a:hover {
 
 @media screen and (max-width: 1550px) {
     .intr {
-        bottom: 8rem;
+        bottom: 1rem;
     }
 }
 
@@ -333,17 +333,13 @@ a:hover {
     }
 
     .intr {
-        bottom: 13rem;
+        bottom: 1rem;
     }
 }
 
 @media screen and (max-width: 1300px) {
     .intr {
-        bottom: 15rem;
-    }
-
-    .sign {
-        width: 1rem;
+        bottom: 1rem;
     }
 
 
@@ -364,7 +360,7 @@ a:hover {
     }
 
     .intr {
-        bottom: 17rem;
+        bottom: 3rem;
     }
 }
 
@@ -374,7 +370,7 @@ a:hover {
     }
 
     .intr {
-        bottom: 21rem;
+        bottom: 6rem;
     }
 
     .description,
@@ -385,7 +381,7 @@ a:hover {
 
 @media screen and (max-width: 900px) {
     .intr {
-        bottom: 25rem;
+        bottom: 10rem;
         opacity: 1;
     }
 
@@ -410,13 +406,8 @@ a:hover {
         position: absolute;
     }
 
-
-    .intr {
-    opacity: 0;
-    }
-
     .sign {
-        width: 6rem;
+        width: 10rem;
         height: auto;
     }
 
@@ -438,7 +429,7 @@ a:hover {
 
     .phone-content {
         position: relative;
-        top: 0rem;
+        top: -4rem;
         opacity: 1;
         
         padding-left: 1rem;
@@ -451,13 +442,11 @@ a:hover {
     .img-phone {
         content: url("./img/index/1.jpeg");
 
-        position: absolute;        
-        width: 75%;
-        height: 50%;
+        position: relative;        
+        width: 85%;
+        height: 100%;
         transform: translate(-50%, 0%);
-        left: 51%;
-
-        padding-top: 8%;
+        left: 50%;
 
         object-fit: cover;
         object-position: 30%;
@@ -465,25 +454,11 @@ a:hover {
         display: block;
     }
 
-    .intr-phone {
-        font-size: 3vw;
-        letter-spacing: 0.50rem;
-
-        position: absolute;
-        width: 100%;
-        top: 52%;
-        float: right;
-        padding-bottom: 2rem;
-        
-        z-index: 999;
-    }
-
     .flex-container-phone {
         flex-wrap: wrap;
-        padding-top: 51rem;
         width: 97%;
 
-        position: relative;
+        position: absolute;
     }
 
     .container-phone {
