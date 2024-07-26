@@ -97,66 +97,6 @@ a:hover {
     height: auto;
 }
 
-.container > .img-a {
-    position: relative;
-    width: 120%;
-    height: auto;
-
-    padding-left: 30%;
-}
-
-.container > .img-aa {
-    position: relative;
-    width: 90%;
-    height: auto;
-
-    padding-left: 50%;
-}
-
-.container > .img-aaa {
-    position: relative;
-    width: 60%;
-    height: auto;
-
-    padding-left: 50%;
-}
-
-.container > .img-aaaa {
-    position: relative;
-    width: 20%;
-    height: auto;
-
-    padding-left: -10%;
-}
-
-.container > .img-b {
-    position: relative;
-    left: -40%;
-}
-
-.container > .img-bb {
-    position: relative;
-    left: -60%;
-}
-
-.container > .img-bbb {
-    position: relative;
-    left: -20%;
-}
-
-.container > .img-c {
-    position: relative;
-    width: 1%;
-    height: auto;
-
-    padding-bottom: -20rem;
-}
-
-.container > .img-d {
-    position: relative;
-    right: 1rem;
-}
-
 .footer {
     position: relative;
     margin-bottom: 2rem;

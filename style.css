@@ -407,7 +407,7 @@ a:hover {
     }
 
     .sign {
-        width: 10rem;
+        width: 8rem;
         height: auto;
     }
 
@@ -417,6 +417,7 @@ a:hover {
 
     .corner_down {
         letter-spacing: 0.01rem;
+        padding-top: 0.2rem;
     }
     
     .rg {
@@ -446,7 +447,7 @@ a:hover {
         width: 85%;
         height: 100%;
         transform: translate(-50%, 0%);
-        left: 50%;
+        left: 48%;
 
         object-fit: cover;
         object-position: 30%;
@@ -552,8 +553,10 @@ a:hover {
     }
     
     .partner-phone {
+        width: 130%;
         padding: 1rem;
         padding-left: 0rem;
+
         opacity: 1;
     }
 
@@ -577,6 +580,7 @@ a:hover {
         text-decoration: none;
 
         position: relative;
+        left: -1rem;
 
         bottom: 0rem;
 
