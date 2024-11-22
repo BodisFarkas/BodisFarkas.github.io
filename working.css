@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+    margin: 0rem;
+    background-color: black;
+    
+    background-image: url(./img/concert/36.jpeg);
+
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: dashed;
+}
+
+
+.working {
+    color: white;
+
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    text-align: center;
+
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.working:hover a {
+    text-decoration: underline;
+    font-weight: 400;
+}
