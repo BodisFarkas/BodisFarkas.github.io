@@ -1,0 +1,47 @@
+<html>
+    <head></head>
+		<title>Bódis Farkas - Video</title>
+		<meta name="author" content="Bódis Farkas" />
+		<meta name="description" content="Hi, my name is Farkas Bódis and this is my video portfolio! :)">
+  		<meta name="keywords" content="Photography, editing, lightroom, concert photography, concert, still life, pictures, images, farkas, bodis farkas, bódis farkas, hungary">
+
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+              document.getElementById("menu-button").style.opacity = "0";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+              document.getElementById("menu-button").style.opacity = "1";
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top-layer"></div>
+        <video autoplay muted loop id="background-video">
+            <source src="./video/motorkontjes_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hover-container" id="menu-button">
+            <div class="text welcome">welcome</div>
+            <div class="text info" onclick="openNav()">menu</div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="../working.html">Tommy Brown - 2023</a>
+              <a href="../working.html">Bohemian Betyars - 2024</a>
+              <a href="../working.html">Motorkontjes - 2024</a>
+              <a href="../index.html">Main Portfolio</a>
+            </div>
+          </div>
+    </body>
+</html>
