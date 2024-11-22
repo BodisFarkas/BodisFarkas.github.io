@@ -224,16 +224,17 @@ a {
         grid-template-columns: 30% 70%;
     }
 
-    .contact {
-        width: 75%;
-    }
-
     .social-holder p {
         opacity: 0;
     }
+    
+    .contact {
+        width: 75%;
+    }
 }
-
-@media screen and (max-width: 751px) {
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
     body {
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -293,40 +294,75 @@ a {
         max-width: 100%;
     }
 
-    .left-column img {
-        width: 100% !important;
-        margin-bottom: 2%;
-        margin-left: 0%;
-    }
-
-    .right-column img {
-        width: 100% !important;
-        margin-bottom: 2%;
-        margin-left: 0%;
-    }
-
     .social-holder p {
         opacity: 1;
     }
+}
 
-    .contact {
-        padding-top: 15rem;
+@media screen and (max-width: 751px) {
+    body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+        margin: 0rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 5px;
+    }
+    
+      ::-webkit-scrollbar-track {
+        box-shadow: white;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #666666; 
+        border-radius: 3px;
+        opacity: .3;
+    }
+      
+    ::-webkit-scrollbar-thumb:hover {
+        background: #292828;
+        opacity: 1;
+        width: 10px;
+    }
+
+    .content {
+        display: block;
+    }
+    
+    .left {
+        padding-left: 1.5rem;
         width: 90%;
     }
 
-    .line_one {
-        display: block;
+    .socials {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        left: 0%;
 
-        grid-gap: 0.5rem;
-        padding-bottom: 1.5rem;
+        z-index: 999;
     }
 
-    .title {
-        z-index: 9999;
-
-        height: auto;
-        float: right;
+    .contact {
         width: 100%;
-        grid-gap: 0.5rem;
+
+        position: relative;
+
+        margin-top: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+        padding: 0;
+
+        width: 95%;
+
+        padding-bottom: 0rem;
     }
 }
