@@ -210,6 +210,14 @@ a {
     text-decoration: underline;
 }
 
+.socials {
+    opacity: 0;
+}
+
+.social-holder p {
+    opacity: 0;
+}
+
 @media screen and (max-width: 1300px) {
     .title {
         font-size: 4rem;
