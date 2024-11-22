@@ -91,6 +91,8 @@ a:hover {
 
     display: grid;
     grid-template-columns: 25% 75%;
+
+    left: 0%;
 }
 
 .social-holder {
@@ -98,6 +100,10 @@ a:hover {
 
     display: flex;
     justify-content: space-around;
+}
+
+.social-holder p {
+    opacity: 0;
 }
 
 .social-holder a img {
@@ -209,6 +215,10 @@ a:hover {
     .content {
         grid-template-columns: 30% 70%;
     }
+
+    .social-holder p {
+        opacity: 0;
+    }    
 }
   
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -225,7 +235,7 @@ a:hover {
         display: grid;
         grid-template-columns: 100%;
         width: 100%;
-        left: -1%;
+        left: 0%
     }
 
     .right-column {
@@ -251,4 +261,8 @@ a:hover {
         margin-bottom: 2%;
         margin-left: 0%;
     }
+
+    .social-holder p {
+        opacity: 1;
+    }    
 }
