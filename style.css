@@ -20,6 +20,15 @@ a:hover {
     font-weight: bold;
 }
 
+.title a {
+    text-decoration: none;
+}
+
+.title a:hover {
+    text-decoration: none;
+    font-weight: normal;
+}
+
 .working-page {
     background-image: url("./img/concert/36.jpeg");
     width: 100%;
@@ -32,6 +41,8 @@ a:hover {
 }
 
 .left {
+    z-index: 99;
+    background-color: white;
 }
 
 .right {
@@ -42,6 +53,41 @@ a:hover {
     background-position: 20%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    z-index: 9;
+}
+
+.rightVideo {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+}
+
+.rightVideo video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures the video covers the div */
+    z-index: 1;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .rightVideo video {
+        object-fit: fill;
+    }
 }
 
 .left-body {
@@ -49,12 +95,10 @@ a:hover {
     height: 100%;
 
     position: relative;
-
-    align-items: center;
-    align-content: center;
 }
 
 .title {
+    padding-top: 33%;
     padding-left: 0.5rem;
 
     font-size: 5rem;
@@ -101,6 +145,10 @@ a:hover {
 
 .divider {
     height: 3rem;
+}
+
+.divider_video {
+    height: 1rem;
 }
 
 .types {
@@ -153,6 +201,18 @@ a:hover {
     
     .left {
         padding-left: 1.5rem;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .rightVideo {
+        display: none;
+    }
+
+    .title {
+        padding-top: 25%;
     }
 
     .socials {
