@@ -1,58 +1,47 @@
 <html>
-<head>
-	<title>Bódis Farkas - Video</title>
-	<meta name="author" content="Bódis Farkas" />
-	<meta name="description" content="Hi, my name is Farkas Bódis and this is my main portfolio! :)">
-  	<meta name="keywords" content="Photography, editing, lightroom, concert photography, concert, still life, pictures, images, farkas, bodis farkas, bódis farkas, hungary">
+    <head>
+		<title>Bódis Farkas - Video</title>
+		<meta name="author" content="Bódis Farkas" />
+		<meta name="description" content="Hi, my name is Farkas Bódis and this is my video portfolio! :)">
+  		<meta name="keywords" content="Photography, editing, lightroom, concert photography, concert, still life, pictures, images, farkas, bodis farkas, bódis farkas, hungary">
 
-    <meta property="og:image" content="https://raw.githubusercontent.com/BodisFarkas/BodisFarkas.github.io/refs/heads/main/img/icon/share-icon.webp">
-    <meta property="og:image:type" content="image/webp">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="videoStyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="./img/icon/icon.ico">
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+              document.getElementById("menu-button").style.opacity = "0";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+              document.getElementById("menu-button").style.opacity = "1";
+            }
+        </script>
+    </head>
 
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    <div class="content">
-        <div class="left">
-            <div class="left-body">
-                <div class="title">
-                    <a href="index.html">Bódis <br>Farkas</a>
-                </div>
-                <div class="description">
-                    Oh, you found my videos!<br>Welcome than, be my guest, take a quick look around. You might find something soon which interest you!
-                </div>
-                <div class="divider_video"></div>
-                <div class="types">
-                    <a href="working.html" class="types-link">* Tommy Brown</a>
-                    <hr>
-                    <a href="working.html" class="types-link">* Banner Boy</a>
-                    <hr>
-                    <a href="working.html" class="types-link">* Bohemian Betyars</a>
-                    <hr>
-                    <a href="working.html" class="types-link">*  Motorkontje</a>
-                    <hr>
-                    <a href="index.html" class="types-link">*  Photography</a>
-                </div>
-            </div>
-            <div class="socials">
-                <div class="social-holder">
-                    <a href="https://www.instagram.com/bodisfarkas" class="social-link" target=”_blank”><img src="./img/icon/ig.webp"></a>
-                    <a href="https://www.behance.net/bodisfarkas" class="social-link" target=”_blank”><img src="./img/icon/behance.webp"></a>
-                    <a href="mailto:bodisfarkaswork@gmail.com" class="social-link"><img src="./img/icon/mail.webp"></a>
-                </div>
-            </div>
+    <body>
+        <div class="top-layer"></div>
+        <video autoplay muted loop id="background-video">
+            <source src="./video/motorkontjes_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hover-container" id="menu-button">
+            <div class="text welcome">welcome</div>
+            <div class="text info" onclick="openNav()">menu</div>
         </div>
-        <div class="rightVideo">
-            <video id="background-video" muted autoplay loop poster="./img/index/hero.jpeg">
-                <source src="./video/motorkontjes_1.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-</body>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="../working.html">Tommy Brown - 2023</a>
+              <a href="../working.html">Bohemian Betyars - 2024</a>
+              <a href="../working.html">Motorkontjes - 2024</a>
+              <a href="../index.html">Main Portfolio</a>
+            </div>
+          </div>
+    </body>
 </html>
