@@ -11,6 +11,7 @@
         <meta property="og:image:height" content="1024">
 
         <link rel="icon" type="image/x-icon" href="./img/icon/icon.ico">
+        <script src="lightbox.js" defer></script>
 
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style_gallery.css">
@@ -45,58 +46,62 @@
                 </div>
             </div>
             <div class="right">
-                <div class="hero-concert"></div>
+                <div class="hero-concert" onclick="showHero()" data-high-res="./img/concert-high-res/hero.jpg" id="hero"></div>
                 <div class="row"> 
                   <div class="left-column">
-                    <img src="./img/concert/3.jpeg">
-                    <img src="./img/concert/1.jpeg">
-                    <img src="./img/concert/4.jpeg">
-                    <img src="./img/concert/7.jpeg">
-                    <img src="./img/concert/10.jpeg">
-                    <img src="./img/concert/11.jpeg">
-                    <img src="./img/concert/13.jpeg">
-                    <img src="./img/concert/15.jpeg">
-                    <img src="./img/concert/17.jpeg">
-                    <img src="./img/concert/19.jpeg">
-                    <img src="./img/concert/21.jpeg">
-                    <img src="./img/concert/23.jpeg">
-                    <img src="./img/concert/25.jpeg">
-                    <img src="./img/concert/27.jpeg">
-                    <img src="./img/concert/29.jpeg">
-                    <img src="./img/concert/6.jpeg">
-                    <img src="./img/concert/33.jpeg">
-                    <img src="./img/concert/35.jpeg">
-                    <img src="./img/concert/37.jpeg">
-                    <img src="./img/concert/39.jpeg">
-                    <img src="./img/concert/41.jpeg">
-                    <img src="./img/concert/43.jpeg">
+                    <img src="./img/concert/3.jpeg" data-high-res="./img/concert-high-res/3.jpg">
+                    <img src="./img/concert/1.jpeg" data-high-res="./img/concert-high-res/1.jpg">
+                    <img src="./img/concert/4.jpeg" data-high-res="./img/concert-high-res/4.jpg">
+                    <img src="./img/concert/7.jpeg" data-high-res="./img/concert-high-res/7.jpg">
+                    <img src="./img/concert/10.jpeg" data-high-res="./img/concert-high-res/10.jpg">
+                    <img src="./img/concert/11.jpeg" data-high-res="./img/concert-high-res/11.jpg">
+                    <img src="./img/concert/13.jpeg" data-high-res="./img/concert-high-res/13.jpg">
+                    <img src="./img/concert/15.jpeg" data-high-res="./img/concert-high-res/15.jpg">
+                    <img src="./img/concert/17.jpeg" data-high-res="./img/concert-high-res/17.jpg">
+                    <img src="./img/concert/19.jpeg" data-high-res="./img/concert-high-res/19.jpg">
+                    <img src="./img/concert/21.jpeg" data-high-res="./img/concert-high-res/21.jpg">
+                    <img src="./img/concert/23.jpeg" data-high-res="./img/concert-high-res/23.jpg">
+                    <img src="./img/concert/25.jpeg" data-high-res="./img/concert-high-res/25.jpg">
+                    <img src="./img/concert/27.jpeg" data-high-res="./img/concert-high-res/27.jpg">
+                    <img src="./img/concert/29.jpeg" data-high-res="./img/concert-high-res/29.jpg">
+                    <img src="./img/concert/6.jpeg" data-high-res="./img/concert-high-res/6.jpg">
+                    <img src="./img/concert/33.jpeg" data-high-res="./img/concert-high-res/33.jpg">
+                    <img src="./img/concert/35.jpeg" data-high-res="./img/concert-high-res/35.jpg">
+                    <img src="./img/concert/37.jpeg" data-high-res="./img/concert-high-res/37.jpg">
+                    <img src="./img/concert/39.jpeg" data-high-res="./img/concert-high-res/39.jpg">
+                    <img src="./img/concert/41.jpeg" data-high-res="./img/concert-high-res/41.jpg">
+                    <img src="./img/concert/43.jpeg" data-high-res="./img/concert-high-res/43.jpg">
                   </div>
                   <div class="right-column">
-                    <img src="./img/concert/2.jpeg">
-                    <img src="./img/concert/5.jpeg">
-                    <img src="./img/concert/31.jpeg">
-                    <img src="./img/concert/8.jpeg">
-                    <img src="./img/concert/9.jpeg">
-                    <img src="./img/concert/12.jpeg">
-                    <img src="./img/concert/14.jpeg">
-                    <img src="./img/concert/16.jpeg">
-                    <img src="./img/concert/18.jpeg">
-                    <img src="./img/concert/22.jpeg">
-                    <img src="./img/concert/20.jpeg">
-                    <img src="./img/concert/24.jpeg">
-                    <img src="./img/concert/26.jpeg">
-                    <img src="./img/concert/28.jpeg">
-                    <img src="./img/concert/30.jpeg">
-                    <img src="./img/concert/32.jpeg">
-                    <img src="./img/concert/34.jpeg">
-                    <img src="./img/concert/36.jpeg">
-                    <img src="./img/concert/38.jpeg">
-                    <img src="./img/concert/40.jpeg">
-                    <img src="./img/concert/42.jpeg">
-                    <img src="./img/concert/44.jpeg">
+                    <img src="./img/concert/2.jpeg" data-high-res="./img/concert-high-res/2.jpg">
+                    <img src="./img/concert/5.jpeg" data-high-res="./img/concert-high-res/5.jpg">
+                    <img src="./img/concert/31.jpeg" data-high-res="./img/concert-high-res/31.jpg">
+                    <img src="./img/concert/8.jpeg" data-high-res="./img/concert-high-res/8.jpg">
+                    <img src="./img/concert/9.jpeg" data-high-res="./img/concert-high-res/9.jpg">
+                    <img src="./img/concert/12.jpeg" data-high-res="./img/concert-high-res/12.jpg">
+                    <img src="./img/concert/14.jpeg" data-high-res="./img/concert-high-res/14.jpg">
+                    <img src="./img/concert/16.jpeg" data-high-res="./img/concert-high-res/16.jpg">
+                    <img src="./img/concert/18.jpeg" data-high-res="./img/concert-high-res/18.jpg">
+                    <img src="./img/concert/22.jpeg" data-high-res="./img/concert-high-res/22.jpg">
+                    <img src="./img/concert/20.jpeg" data-high-res="./img/concert-high-res/20.jpg">
+                    <img src="./img/concert/24.jpeg" data-high-res="./img/concert-high-res/24.jpg">
+                    <img src="./img/concert/26.jpeg" data-high-res="./img/concert-high-res/26.jpg">
+                    <img src="./img/concert/28.jpeg" data-high-res="./img/concert-high-res/28.jpg">
+                    <img src="./img/concert/30.jpeg" data-high-res="./img/concert-high-res/30.jpg">
+                    <img src="./img/concert/32.jpeg" data-high-res="./img/concert-high-res/32.jpg">
+                    <img src="./img/concert/34.jpeg" data-high-res="./img/concert-high-res/34.jpg">
+                    <img src="./img/concert/36.jpeg" data-high-res="./img/concert-high-res/36.jpg">
+                    <img src="./img/concert/38.jpeg" data-high-res="./img/concert-high-res/38.jpg">
+                    <img src="./img/concert/40.jpeg" data-high-res="./img/concert-high-res/40.jpg">
+                    <img src="./img/concert/42.jpeg" data-high-res="./img/concert-high-res/42.jpg">
+                    <img src="./img/concert/44.jpeg" data-high-res="./img/concert-high-res/44.jpg">
                   </div>
                 </div>
             </div>
+        </div>
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="closeLightbox">&times;</span>
+            <img id="lightboxImg" src="" alt="">
         </div>
     </body>
 </html>

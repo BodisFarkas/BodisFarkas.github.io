@@ -11,6 +11,7 @@
         <meta property="og:image:height" content="1024">
 
         <link rel="icon" type="image/x-icon" href="./img/icon/icon.ico">
+        <script src="lightbox.js" defer></script>
 
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style_gallery.css">
@@ -45,79 +46,83 @@
                 </div>
             </div>
             <div class="right">
-                <div class="hero-still"></div>
+                <div class="hero-still" onclick="showHero()" data-high-res="./img/still-high-res/hero.jpg" id="hero"></div>
                 <div class="row"> 
                   <div class="left-column">
-                    <img src="./img/still/1.jpeg">
-                    <img src="./img/still/3.jpeg">
-                    <img src="./img/still/5.jpeg">
-                    <img src="./img/still/7.jpeg">
-                    <img src="./img/still/9.jpeg">
-                    <img src="./img/still/11.jpeg">
-                    <img src="./img/still/13.jpeg">
-                    <img src="./img/still/15.jpeg">
-                    <img src="./img/still/17.jpeg">
-                    <img src="./img/still/19.jpeg">
-                    <img src="./img/still/21.jpeg">
-                    <img src="./img/still/23.jpeg">
-                    <img src="./img/still/25.jpeg">
-                    <img src="./img/still/27.jpeg">
-                    <img src="./img/still/29.jpeg">
-                    <img src="./img/still/31.jpeg">
-                    <img src="./img/still/33.jpeg">
-                    <img src="./img/still/35.jpeg">
-                    <img src="./img/still/37.jpeg">
-                    <img src="./img/still/39.jpeg">
-                    <img src="./img/still/41.jpeg">
-                    <img src="./img/still/43.jpeg">
-                    <img src="./img/still/45.jpeg">
-                    <img src="./img/still/47.jpeg">
-                    <img src="./img/still/49.jpeg">
-                    <img src="./img/still/51.jpeg">
-                    <img src="./img/still/53.jpeg">
-                    <img src="./img/still/55.jpeg">
-                    <img src="./img/still/57.jpeg">
-                    <img src="./img/still/59.jpeg">
-                    <img src="./img/still/61.jpeg">
-                    <img src="./img/still/63.jpeg">
+                    <img src="./img/still/1.jpeg" data-high-res="./img/still-high-res/1.jpg">
+                    <img src="./img/still/3.jpeg" data-high-res="./img/still-high-res/3.jpg">
+                    <img src="./img/still/5.jpeg" data-high-res="./img/still-high-res/5.jpg">
+                    <img src="./img/still/7.jpeg" data-high-res="./img/still-high-res/7.jpg">
+                    <img src="./img/still/9.jpeg" data-high-res="./img/still-high-res/9.jpg">
+                    <img src="./img/still/11.jpeg" data-high-res="./img/still-high-res/11.jpg">
+                    <img src="./img/still/13.jpeg" data-high-res="./img/still-high-res/13.jpg">
+                    <img src="./img/still/15.jpeg" data-high-res="./img/still-high-res/15.jpg">
+                    <img src="./img/still/17.jpeg" data-high-res="./img/still-high-res/17.jpg">
+                    <img src="./img/still/19.jpeg" data-high-res="./img/still-high-res/19.jpg">
+                    <img src="./img/still/21.jpeg" data-high-res="./img/still-high-res/21.jpg">
+                    <img src="./img/still/23.jpeg" data-high-res="./img/still-high-res/23.jpg">
+                    <img src="./img/still/25.jpeg" data-high-res="./img/still-high-res/25.jpg">
+                    <img src="./img/still/27.jpeg" data-high-res="./img/still-high-res/27.jpg">
+                    <img src="./img/still/29.jpeg" data-high-res="./img/still-high-res/29.jpg">
+                    <img src="./img/still/31.jpeg" data-high-res="./img/still-high-res/31.jpg">
+                    <img src="./img/still/33.jpeg" data-high-res="./img/still-high-res/33.jpg">
+                    <img src="./img/still/35.jpeg" data-high-res="./img/still-high-res/35.jpg">
+                    <img src="./img/still/37.jpeg" data-high-res="./img/still-high-res/37.jpg">
+                    <img src="./img/still/39.jpeg" data-high-res="./img/still-high-res/39.jpg">
+                    <img src="./img/still/41.jpeg" data-high-res="./img/still-high-res/41.jpg">
+                    <img src="./img/still/43.jpeg" data-high-res="./img/still-high-res/43.jpg">
+                    <img src="./img/still/45.jpeg" data-high-res="./img/still-high-res/45.jpg">
+                    <img src="./img/still/47.jpeg" data-high-res="./img/still-high-res/47.jpg">
+                    <img src="./img/still/49.jpeg" data-high-res="./img/still-high-res/49.jpg">
+                    <img src="./img/still/51.jpeg" data-high-res="./img/still-high-res/51.jpg">
+                    <img src="./img/still/53.jpeg" data-high-res="./img/still-high-res/53.jpg">
+                    <img src="./img/still/55.jpeg" data-high-res="./img/still-high-res/55.jpg">
+                    <img src="./img/still/57.jpeg" data-high-res="./img/still-high-res/57.jpg">
+                    <img src="./img/still/59.jpeg" data-high-res="./img/still-high-res/59.jpg">
+                    <img src="./img/still/61.jpeg" data-high-res="./img/still-high-res/61.jpg">
+                    <img src="./img/still/63.jpeg" data-high-res="./img/still-high-res/63.jpg">
                   </div>
                   <div class="right-column">
-                    <img src="./img/still/2.jpeg">
-                    <img src="./img/still/4.jpeg">
-                    <img src="./img/still/6.jpeg">
-                    <img src="./img/still/8.jpeg">
-                    <img src="./img/still/10.jpeg">
-                    <img src="./img/still/12.jpeg">
-                    <img src="./img/still/14.jpeg">
-                    <img src="./img/still/16.jpeg">
-                    <img src="./img/still/18.jpeg">
-                    <img src="./img/still/20.jpeg">
-                    <img src="./img/still/22.jpeg">
-                    <img src="./img/still/24.jpeg">
-                    <img src="./img/still/26.jpeg">
-                    <img src="./img/still/28.jpeg">
-                    <img src="./img/still/30.jpeg">
-                    <img src="./img/still/32.jpeg">
-                    <img src="./img/still/34.jpeg">
-                    <img src="./img/still/36.jpeg">
-                    <img src="./img/still/38.jpeg">
-                    <img src="./img/still/40.jpeg">
-                    <img src="./img/still/42.jpeg">
-                    <img src="./img/still/44.jpeg">
-                    <img src="./img/still/46.jpeg">
-                    <img src="./img/still/48.jpeg">
-                    <img src="./img/still/50.jpeg">
-                    <img src="./img/still/52.jpeg">
-                    <img src="./img/still/54.jpeg">
-                    <img src="./img/still/56.jpeg">
-                    <img src="./img/still/58.jpeg">
-                    <img src="./img/still/60.jpeg">
-                    <img src="./img/still/62.jpeg">
-                    <img src="./img/still/64.jpeg">
-                    <img src="./img/still/65.jpeg">
+                    <img src="./img/still/2.jpeg" data-high-res="./img/still-high-res/2.jpg">
+                    <img src="./img/still/4.jpeg" data-high-res="./img/still-high-res/4.jpg">
+                    <img src="./img/still/6.jpeg" data-high-res="./img/still-high-res/6.jpg">
+                    <img src="./img/still/8.jpeg" data-high-res="./img/still-high-res/8.jpg">
+                    <img src="./img/still/10.jpeg" data-high-res="./img/still-high-res/10.jpg">
+                    <img src="./img/still/12.jpeg" data-high-res="./img/still-high-res/12.jpg">
+                    <img src="./img/still/14.jpeg" data-high-res="./img/still-high-res/14.jpg">
+                    <img src="./img/still/16.jpeg" data-high-res="./img/still-high-res/16.jpg">
+                    <img src="./img/still/18.jpeg" data-high-res="./img/still-high-res/18.jpg">
+                    <img src="./img/still/20.jpeg" data-high-res="./img/still-high-res/20.jpg">
+                    <img src="./img/still/22.jpeg" data-high-res="./img/still-high-res/22.jpg">
+                    <img src="./img/still/24.jpeg" data-high-res="./img/still-high-res/24.jpg">
+                    <img src="./img/still/26.jpeg" data-high-res="./img/still-high-res/26.jpg">
+                    <img src="./img/still/28.jpeg" data-high-res="./img/still-high-res/28.jpg">
+                    <img src="./img/still/30.jpeg" data-high-res="./img/still-high-res/30.jpg">
+                    <img src="./img/still/32.jpeg" data-high-res="./img/still-high-res/32.jpg">
+                    <img src="./img/still/34.jpeg" data-high-res="./img/still-high-res/34.jpg">
+                    <img src="./img/still/36.jpeg" data-high-res="./img/still-high-res/36.jpg">
+                    <img src="./img/still/38.jpeg" data-high-res="./img/still-high-res/38.jpg">
+                    <img src="./img/still/40.jpeg" data-high-res="./img/still-high-res/40.jpg">
+                    <img src="./img/still/42.jpeg" data-high-res="./img/still-high-res/42.jpg">
+                    <img src="./img/still/44.jpeg" data-high-res="./img/still-high-res/44.jpg">
+                    <img src="./img/still/46.jpeg" data-high-res="./img/still-high-res/46.jpg">
+                    <img src="./img/still/48.jpeg" data-high-res="./img/still-high-res/48.jpg">
+                    <img src="./img/still/50.jpeg" data-high-res="./img/still-high-res/50.jpg">
+                    <img src="./img/still/52.jpeg" data-high-res="./img/still-high-res/52.jpg">
+                    <img src="./img/still/54.jpeg" data-high-res="./img/still-high-res/54.jpg">
+                    <img src="./img/still/56.jpeg" data-high-res="./img/still-high-res/56.jpg">
+                    <img src="./img/still/58.jpeg" data-high-res="./img/still-high-res/58.jpg">
+                    <img src="./img/still/60.jpeg" data-high-res="./img/still-high-res/60.jpg">
+                    <img src="./img/still/62.jpeg" data-high-res="./img/still-high-res/62.jpg">
+                    <img src="./img/still/64.jpeg" data-high-res="./img/still-high-res/64.jpg">
+                    <img src="./img/still/65.jpeg" data-high-res="./img/still-high-res/65.jpg">
                   </div>
                 </div>
             </div>
+        </div>
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="closeLightbox">&times;</span>
+            <img id="lightboxImg" src="" alt="">
         </div>
     </body>
 </html>
