@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox'); //main class
     const lightboxImg = document.getElementById('lightboxImg'); //image in class
-    const closeLightbox = document.getElementById('closeLightbox'); //closing lb
+    const closeLightboxButton = document.getElementById('closeLightbox'); //closing lb
 
     document.querySelectorAll('.left-column img, .right-column img').forEach(img => {
         img.addEventListener('click', () => {
@@ -14,23 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    //x to close lightbox
-    closeLightbox.addEventListener('click', () => {
+
+    function closeLightbox() {
         lightbox.style.display = 'none';
-        lightboxImg.src = '';
+        setTimeout(() => {
+            lightboxImg.src = '';
+        }, 100);
+    }
+
+    //x to close lightbox
+    closeLightboxButton.addEventListener('click', () => {
+        closeLightbox();
     });
     //close by clicking on blank
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
-            lightbox.style.display = 'none';
-            lightboxImg.src = '';
+            closeLightbox();
         }
     });
     //exit on esc
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
-            lightbox.style.display = 'none';
-            lightboxImg.src = '';
+            closeLightbox();
         }
     });
 });
