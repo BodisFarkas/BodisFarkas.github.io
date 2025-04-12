@@ -2,14 +2,22 @@
 function heroPreload() {
     const imagesToPreload = [
                             "./img/still/hero.jpeg",
+                            "./img/still-high-res/hero.jpg",
                             "./img/concert/hero.jpeg",
+                            "./img/concert-high-res/hero.jpg",
                             "./img/concert/3.jpeg",
+                            "./img/concert-high-res/3.jpg",
                             "./img/concert/2.jpeg",
+                            "./img/concert-high-res/2.jpg",
                             "./img/concert/1.jpeg",
+                            "./img/concert-high-res/1.jpg",
                             "./img/concert/5.jpeg",
                             "./img/still/1.jpeg",
+                            "./img/stil-high-res/1.jpg",
                             "./img/still/2.jpeg",
-                            "./img/still/3.jpeg",];
+                            "./img/still-high-res/2.jpg",
+                            "./img/still/3.jpeg",
+                            "./img/still-high-res/3.jpg",];
     const preloadedImages = [];
 
     imagesToPreload.forEach(src => {
