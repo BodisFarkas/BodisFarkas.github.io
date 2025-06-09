@@ -243,9 +243,13 @@ a:hover {
     margin: auto;
 }
 
-.lightbox .close {
+.lightbox .shopping-bag {
+    content: url(./img/icon/shopping-tag2.png);
+
+    width: 3rem;
+
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 30px;
     font-size: 2rem;
     color: white;

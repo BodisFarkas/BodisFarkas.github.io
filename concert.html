@@ -16,6 +16,17 @@
         <script>
             document.addEventListener("DOMContentLoaded", concertHighResPreload());
         </script>
+        <script>
+            function goToProductPage(icon) {
+              // Find the closest image in the same container as the icon
+              const container = icon.closest('.product');
+              const img = container.querySelector('img[data-product-img]');
+              if (img) {
+                const imgSrc = encodeURIComponent(img.src);
+                window.location.href = `product.html?img=${imgSrc}`;
+              }
+            }
+            </script>
 
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style_gallery.css">
@@ -23,7 +34,7 @@
     </head>
 
     <body>
-        <div class="content">
+        <div class="content product">
             <div class="left">
                 <div class="left-body">
                     <div class="title">
@@ -104,8 +115,9 @@
             </div>
         </div>
         <div class="lightbox" id="lightbox">
-            <span class="close" id="closeLightbox">&times;</span>
-            <img id="lightboxImg" src="" alt="">
+            <span class="close" id="closeLightbox"></span>
+            <span class="shopping-bag" id="printOnDemand"></span>
+            <img id="lightboxImg" src="" alt="" style="cursor: pointer;" onclick="goToProductPage(this)">
         </div>
     </body>
 </html>
