@@ -13,10 +13,7 @@
   <meta property="og:image:height" content="1024">
 
   <link rel="icon" type="image/x-icon" href="./img/icon/icon.ico">
-  <script src=" " defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", concertHighResPreload());
-  </script>
+  <script src="product.js"></script>
 
 	<link rel="stylesheet" href="style_product.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,13 +21,5 @@
 
 <body>
   <img id="productImage" alt="Selected Product">
-  
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const imgSrc = params.get('img');
-    if (imgSrc) {
-      document.getElementById('productImage').src = decodeURIComponent(imgSrc);
-    }
-  </script>
 </body>
 </html>
